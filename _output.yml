@@ -1,0 +1,23 @@
+bookdown::bs4_book:
+  theme:
+    # bootswatch: 
+    primary: "#3F078F"
+    base_font: "Roboto"
+    code_font: "Fira Mono"
+  repo: 
+    base: https://github.com/jmbuhr/dataadvanced
+    branch: main
+
+bookdown::gitbook:
+  config:
+    search:
+      engine: fuse
+    toc:
+      collapse: section
+      before: |
+        <li><strong><a href="./">Advanced Data Analysis with R</a></strong></li>
+    edit:
+      link: https://github.com/jmbuhr/dataadvanced/edit/main/%s
+      text: "Edit"
+    sharing: no
+  # css: 'style.css'
