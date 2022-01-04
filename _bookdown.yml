@@ -1,7 +1,8 @@
 book_filename: "dataadvanced"
+new_session: true
 delete_merged_file: true
-output_dir: docs
 before_chapter_script: "_common.R"
+output_dir: docs
 language:
   ui:
     chapter_name: "Lesson "

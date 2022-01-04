@@ -1,7 +1,7 @@
 --- 
 title: "Advanced Data Analysis with R"
 author: "Jannik Buhr"
-date: "`r Sys.Date()`"
+date: "2022-01-04"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]

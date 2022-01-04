@@ -1,1 +1,6 @@
+prerequisits
+structure-of-the-course
+exe
+seminar
+discord
 intro
