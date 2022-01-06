@@ -1,7 +1,7 @@
 --- 
 title: "Advanced Data Analysis with R"
 author: "Jannik Buhr"
-date: "2022-01-04"
+date: "2022-01-06"
 site: bookdown::bookdown_site
 url: "https://jmbuhr.de/dataadvanced/"
 bibliography: [book.bib, packages.bib]
