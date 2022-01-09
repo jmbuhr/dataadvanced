@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Lesson 2 Advanced Workflows and Tools | Advanced Data Analysis with R</title>
+<title>Lesson 2 Advanced workflows and tools | Advanced Data Analysis with R</title>
 <meta name="author" content="Jannik Buhr">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.2"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -33,11 +33,13 @@
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
 <li><a class="" href="index.html">Hello and welcome!</a></li>
-<li><a class="" href="preambel-the-case-for-optimizing-your-workflow.html"><span class="header-section-number">1</span> Preambel: The case for optimizing your workflow</a></li>
-<li><a class="active" href="intro.html"><span class="header-section-number">2</span> Advanced Workflows and Tools</a></li>
-<li><a class="" href="advanced-rmarkdown.html"><span class="header-section-number">3</span> Advanced Rmarkdown</a></li>
-<li><a class="" href="omics-go-big.html"><span class="header-section-number">4</span> Omics: Go big!</a></li>
-<li><a class="" href="machine-learning-with-tidymodels.html"><span class="header-section-number">5</span> Machine Learning with tidymodels</a></li>
+<li><a class="" href="preamble-the-case-for-optimizing-your-workflow.html"><span class="header-section-number">1</span> Preamble: the case for optimizing your workflow</a></li>
+<li><a class="active" href="intro.html"><span class="header-section-number">2</span> Advanced workflows and tools</a></li>
+<li><a class="" href="advanced-rmarkdown.html"><span class="header-section-number">3</span> Advanced rmarkdown</a></li>
+<li><a class="" href="stats-time.html"><span class="header-section-number">4</span> Stats time!</a></li>
+<li><a class="" href="omics-go-big.html"><span class="header-section-number">5</span> Omics: go big!</a></li>
+<li><a class="" href="machine-learning-with-tidymodels.html"><span class="header-section-number">6</span> Machine learning with tidymodels</a></li>
+<li><a class="" href="manage-large-projects-with-targets.html"><span class="header-section-number">7</span> Manage large projects with targets</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
 
@@ -48,7 +50,7 @@
 </div>
   </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="intro" class="section level1" number="2">
 <h1>
-<span class="header-section-number">Lesson 2</span> Advanced Workflows and Tools<a class="anchor" aria-label="anchor" href="#intro"><i class="fas fa-link"></i></a>
+<span class="header-section-number">Lesson 2</span> Advanced workflows and tools<a class="anchor" aria-label="anchor" href="#intro"><i class="fas fa-link"></i></a>
 </h1>
 <div id="goals-for-today" class="section level2" number="2.1">
 <h2>
@@ -63,12 +65,12 @@
 </div>
 <div id="keep-track-of-your-code-version-management-with-git" class="section level2" number="2.2">
 <h2>
-<span class="header-section-number">2.2</span> Keep track of your code: Version management with git<a class="anchor" aria-label="anchor" href="#keep-track-of-your-code-version-management-with-git"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2.2</span> Keep track of your code: version management with git<a class="anchor" aria-label="anchor" href="#keep-track-of-your-code-version-management-with-git"><i class="fas fa-link"></i></a>
 </h2>
 </div>
 <div id="share-code-and-help-others-on-github" class="section level2" number="2.3">
 <h2>
-<span class="header-section-number">2.3</span> Share code and help others on GitHub<a class="anchor" aria-label="anchor" href="#share-code-and-help-others-on-github"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2.3</span> Share code and help others on github<a class="anchor" aria-label="anchor" href="#share-code-and-help-others-on-github"><i class="fas fa-link"></i></a>
 </h2>
 </div>
 <div id="re-use-functions-with-a-personal-package" class="section level2" number="2.4">
@@ -82,7 +84,7 @@
 </div>
 <div id="install-packages-from-different-sources-cran-github-and-bioconductor" class="section level2" number="2.5">
 <h2>
-<span class="header-section-number">2.5</span> Install packages from different sources: CRAN, GitHub and Bioconductor<a class="anchor" aria-label="anchor" href="#install-packages-from-different-sources-cran-github-and-bioconductor"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2.5</span> Install packages from different sources: cran, github and bioconductor<a class="anchor" aria-label="anchor" href="#install-packages-from-different-sources-cran-github-and-bioconductor"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li>
@@ -93,7 +95,7 @@
 </div>
 <div id="get-help-faster-with-reproducible-examples-reprex" class="section level2" number="2.6">
 <h2>
-<span class="header-section-number">2.6</span> Get help faster with Reproducible Examples: <code>reprex</code><a class="anchor" aria-label="anchor" href="#get-help-faster-with-reproducible-examples-reprex"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2.6</span> Get help faster with reproducible examples: <code>reprex</code><a class="anchor" aria-label="anchor" href="#get-help-faster-with-reproducible-examples-reprex"><i class="fas fa-link"></i></a>
 </h2>
 </div>
 <div id="resources" class="section level2" number="2.7">
@@ -115,43 +117,35 @@
 <h3>
 <span class="header-section-number">2.8.1</span> Make it your own!<a class="anchor" aria-label="anchor" href="#make-it-your-own"><i class="fas fa-link"></i></a>
 </h3>
-<p>In the <a href="https://jmbuhr.de/dataintro">introductory course</a> last semester
-we talked about different ways of expressing the spread measurements around their mean.
-In the process we found that while there is a function in R for the
-standard deviation (<code>sd</code>), there is no such built-in function for the
-standard error of the mean.
+<p>In the <a href="https://jmbuhr.de/dataintro">introductory course</a> last semester we talked about different ways of expressing the spread measurements around their mean.
+In the process we found that while there is a function in R for the standard deviation (<code>sd</code>), there is no such built-in function for the standard error of the mean.
 So we wrote our own tiny function called <code>sem</code>, which calculates just that.
-But if would be annoying if we had to put this function in every one of
-our analysis scripts!</p>
-<p>Write a small package,
-which exports the <code>sem</code> function and publish it on GitHub.
-Make sure that you are able to install your very own package
-from there as well.
-As your exercise submission for this week, simply send
-me a link to your repository.
+But if would be annoying if we had to put this function in every one of our analysis scripts!</p>
+<p>Write a small package, which exports the <code>sem</code> function and publish it on GitHub.
+Make sure that you are able to install your very own package from there as well.
+As your exercise submission for this week, simply send me a link to your repository.
 Remember to ask questions in our discord server if you get stuck!</p>
 <p><strong>Bonus Tasks</strong>:</p>
 <ul>
-<li>Write documentation for your <code>sem</code> function with <code>roxygen</code>
-and experience the joy of seeing your very own words on a help page.</li>
+<li>Write documentation for your <code>sem</code> function with <code>roxygen</code> and experience the joy of seeing your very own words on a help page.</li>
 <li>Extend your package with a custom ggplot theme function.</li>
 </ul>
 </div>
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="preambel-the-case-for-optimizing-your-workflow.html"><span class="header-section-number">1</span> Preambel: The case for optimizing your workflow</a></div>
-<div class="next"><a href="advanced-rmarkdown.html"><span class="header-section-number">3</span> Advanced Rmarkdown</a></div>
+<div class="prev"><a href="preamble-the-case-for-optimizing-your-workflow.html"><span class="header-section-number">1</span> Preamble: the case for optimizing your workflow</a></div>
+<div class="next"><a href="advanced-rmarkdown.html"><span class="header-section-number">3</span> Advanced rmarkdown</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#intro"><span class="header-section-number">2</span> Advanced Workflows and Tools</a></li>
+<li><a class="nav-link" href="#intro"><span class="header-section-number">2</span> Advanced workflows and tools</a></li>
 <li><a class="nav-link" href="#goals-for-today"><span class="header-section-number">2.1</span> Goals for today</a></li>
-<li><a class="nav-link" href="#keep-track-of-your-code-version-management-with-git"><span class="header-section-number">2.2</span> Keep track of your code: Version management with git</a></li>
-<li><a class="nav-link" href="#share-code-and-help-others-on-github"><span class="header-section-number">2.3</span> Share code and help others on GitHub</a></li>
+<li><a class="nav-link" href="#keep-track-of-your-code-version-management-with-git"><span class="header-section-number">2.2</span> Keep track of your code: version management with git</a></li>
+<li><a class="nav-link" href="#share-code-and-help-others-on-github"><span class="header-section-number">2.3</span> Share code and help others on github</a></li>
 <li><a class="nav-link" href="#re-use-functions-with-a-personal-package"><span class="header-section-number">2.4</span> Re-use functions with a personal package</a></li>
-<li><a class="nav-link" href="#install-packages-from-different-sources-cran-github-and-bioconductor"><span class="header-section-number">2.5</span> Install packages from different sources: CRAN, GitHub and Bioconductor</a></li>
-<li><a class="nav-link" href="#get-help-faster-with-reproducible-examples-reprex"><span class="header-section-number">2.6</span> Get help faster with Reproducible Examples: reprex</a></li>
+<li><a class="nav-link" href="#install-packages-from-different-sources-cran-github-and-bioconductor"><span class="header-section-number">2.5</span> Install packages from different sources: cran, github and bioconductor</a></li>
+<li><a class="nav-link" href="#get-help-faster-with-reproducible-examples-reprex"><span class="header-section-number">2.6</span> Get help faster with reproducible examples: reprex</a></li>
 <li><a class="nav-link" href="#resources"><span class="header-section-number">2.7</span> Resources</a></li>
 <li>
 <a class="nav-link" href="#exercises"><span class="header-section-number">2.8</span> Exercises</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#make-it-your-own"><span class="header-section-number">2.8.1</span> Make it your own!</a></li></ul>
@@ -173,7 +167,7 @@ and experience the joy of seeing your very own words on a help page.</li>
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Advanced Data Analysis with R</strong>" was written by Jannik Buhr. It was last built on 2022-01-06.</p>
+    <p>"<strong>Advanced Data Analysis with R</strong>" was written by Jannik Buhr. It was last built on 2022-01-09.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

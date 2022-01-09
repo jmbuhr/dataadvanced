@@ -1,7 +1,7 @@
 --- 
 title: "Advanced Data Analysis with R"
 author: "Jannik Buhr"
-date: "2022-01-06"
+date: "2022-01-09"
 site: bookdown::bookdown_site
 url: "https://jmbuhr.de/dataadvanced/"
 bibliography: [book.bib, packages.bib]
@@ -14,6 +14,14 @@ description: |
 
 # Hello and welcome! {- #welcome}
 
+... to the latest iteration of my advanced R course.
+
+::: { .alert .alert-warning}
+Hi there, this course is still under
+construction, so everything is subject
+to change and there are no videos, yet.
+:::
+
 ::: { .alert .alert-info}
 <!-- TODO -->
 **Current course dates**\
@@ -23,8 +31,6 @@ Seminar weekly on Fridays at 9:15 – 10:45\
 (+Lecture online in your own time)\
 Sign-up: see [discord](#discord)
 :::
-
-... to the latest iteration of my advanced R course.
 
 ## Prerequisits
 
@@ -42,7 +48,7 @@ but the material is open to anyone!
     (plus some more code to generate illustrative graphics) as well as explanations
   - [Exercises](#exe) to complete and send in
   - A [seminar] to discuss the exercises
-  - A [discord] server to ask questions and share solutions
+  - A [discord](#discord) server to ask questions and share solutions
 
 I do recommend to watch the lecture in your own time, and then use the lecture script afterwards to look up concepts and code you want to revisit.
 Code chunks also have a copy-button, which is helpful for quickly playing around with it, but make sure you actually walk through the lecture and do the typing first,
@@ -60,12 +66,11 @@ the more time I have to prepare answers for the seminar.
 ### Seminar
 
 Each week, we will meet to discuss the exercises and answer any questions that might have have popped up.
-Currently it looks like it will be possible to do so in person, in which case we will meet here: 
-
-> Mathematikon (INF 205), IWR CIP-Pool 3. OG
-
-Even though these are technically computer rooms, it would be great if you could bring your own laptop so that you can code along and known that you will be able to apply what you learned after the course as well.
-Also, we might not be able to install the necessary software in the computer room.
+At the time of writing, there is still
+a pandemic going on.
+And since we are doing computational work
+anyways we will most likely just
+meet online (link in the discord).
 
 ### Discord and signup {#discord}
 
