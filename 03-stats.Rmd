@@ -1,0 +1,63 @@
+# Stats time!
+
+```{r}
+library(tidyverse)
+```
+
+<!-- todo: Motulsky, Intuitive Biostatistics! -->
+
+... the ultimate guide to choosing a hypothesis test.
+
+-   with some recap and new tests
+
+## Lingo
+
+- outcome ~ independent variable(s)
+
+## Compare proportions and counts (outcome: binomial)
+
+## Case-control studies
+
+## Survival analysis (outcome: survival times)
+
+## Compare two distributions (outcome: continuous gaussian)
+
+### Unpaired t-test
+
+```{r}
+t_example <- tibble(
+  x = rnorm(3, 10),
+  y = rnorm(3, 14) 
+) %>%
+  pivot_longer(x:y)
+
+t_example %>% 
+  ggplot(aes(name, value)) +
+  geom_jitter(width = 0.05) +
+  expand_limits(y = 0)
+```
+
+```{r}
+t.test(value ~ name, data = t_example, var.equal = TRUE)
+model <- lm(value ~ name, data = t_example)
+summary(model)
+```
+
+### Paired t-test
+
+### Nonparametric methods (outcome: continuous nongaussian)
+
+## Compare multiple distributions (outcome: continuous gaussian)
+
+### One-way anova
+
+### Two-way anova
+
+### Comparison to (multiple) linear regression
+
+![](images/paste-EA53B80F.png)
+
+<https://scientificallysound.org/2017/06/08/t-test-as-linear-models-r/>
+
+## Choose a statistical test
+

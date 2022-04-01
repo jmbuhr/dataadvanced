@@ -1,4 +1,4 @@
-# Preamble: the case for optimizing your workflow
+# Advanced workflows and tools {#intro}
 
 ::: { .alert .alert-warning}
 Hi there, this course is still under
@@ -6,7 +6,7 @@ construction, so everything is subject
 to change and there are no videos, yet.
 :::
 
-## Sharpening the axe
+## Preamble: Sharpening the axe
 
 There is this great quote attributed to Abraham Lincoln:
 
@@ -78,8 +78,6 @@ Because I spend so much time learning the intricacies of the tools I am using an
 
 <!-- todo -->
 
-# Advanced workflows and tools {#intro}
-
 ## Goals for today
 
 -   learn to fully utilize this course material
@@ -126,152 +124,6 @@ Remember to ask questions in our discord server if you get stuck!
 
 **Bonus Tasks**:
 
--   Write documentation for your `sem` function with `roxygen` and experience the joy of seeing your very own words on a help page.
--   Extend your package with a custom ggplot theme function.
-
-# Advanced rmarkdown
-
-## Build a personal website (for free)
-
--   what is a website anyway?
--   overview of packages: `distill`, `blogdown`
--   build a hugo apéro site: <https://hugo-apero.netlify.app/>
-
-## Make presentations with rmarkdown
-
--   overview of packages: PowerPoint, `xaringan`, `revealjs`
--   include plots from code
--   work with larger projects, include plots from other Rmd documents
-
-## Resources
-
--   <https://bookdown.org/yihui/blogdown/>
--   <https://gohugo.io/>
--   <https://github.com/yihui/xaringan>
--   <https://xaringan.gallery/>
--   <https://github.com/gadenbuie/xaringanExtra/>
--   <https://github.com/rstudio/revealjs>
-
-## Exercises
-
-# Stats time!
-
-
-```r
-library(tidyverse)
-```
-
-<!-- todo: Motulsky, Intuitive Biostatistics! -->
-
-... the ultimate guide to choosing a hypothesis test.
-
--   with some recap and new tests
-
-## Lingo
-
-- outcome ~ independent variable(s)
-
-## Compare proportions and counts (outcome: binomial)
-
-## Case-control studies
-
-## Survival analysis (outcome: survival times)
-
-## Compare two distributions (outcome: continuous gaussian)
-
-### Unpaired t-test
-
-
-```r
-t_example <- tibble(
-  x = rnorm(3, 10),
-  y = rnorm(3, 14) 
-) %>%
-  pivot_longer(x:y)
-
-t_example %>% 
-  ggplot(aes(name, value)) +
-  geom_jitter(width = 0.05) +
-  expand_limits(y = 0)
-```
-
-<img src="01-intro_files/figure-html/unnamed-chunk-2-1.png" width="100%" />
-
-
-```r
-t.test(value ~ name, data = t_example, var.equal = TRUE)
-```
-
-```
-
-	Two Sample t-test
-
-data:  value by name
-t = -5.0327, df = 4, p-value = 0.007319
-alternative hypothesis: true difference in means between group x and group y is not equal to 0
-95 percent confidence interval:
- -2.7725173 -0.8010524
-sample estimates:
-mean in group x mean in group y 
-       10.80999        12.59678 
-```
-
-```r
-model <- lm(value ~ name, data = t_example)
-summary(model)
-```
-
-```
-
-Call:
-lm(formula = value ~ name, data = t_example)
-
-Residuals:
-      1       2       3       4       5       6 
- 0.4277 -0.2301  0.1087 -0.1967 -0.5364  0.4269 
-
-Coefficients:
-            Estimate Std. Error t value Pr(>|t|)    
-(Intercept)   10.810      0.251  43.060 1.74e-06 ***
-namey          1.787      0.355   5.033  0.00732 ** 
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-Residual standard error: 0.4348 on 4 degrees of freedom
-Multiple R-squared:  0.8636,	Adjusted R-squared:  0.8295 
-F-statistic: 25.33 on 1 and 4 DF,  p-value: 0.007319
-```
-
-### Paired t-test
-
-### Nonparametric methods (outcome: continuous nongaussian)
-
-## Compare multiple distributions (outcome: continuous gaussian)
-
-### One-way anova
-
-### Two-way anova
-
-### Comparison to (multiple) linear regression
-
-![](images/paste-EA53B80F.png)
-
-<https://scientificallysound.org/2017/06/08/t-test-as-linear-models-r/>
-
-
-## Choose a statistical test
-
-
-# Omics: go big!
-
-## What is "omics"?
-
-
-# Machine learning with `tidymodels`
-
-## What is machine learning?
-
-
-# Manage large projects with `targets`
-
+- Write documentation for your `sem` function with `roxygen` and experience the joy of seeing your very own words on a help page.
+- Extend your package with a custom ggplot theme function.
 
