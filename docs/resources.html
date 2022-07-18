@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Jannik Buhr">
-<meta name="dcterms.date" content="2022-07-18">
 
-<title>Advanced Data Analysis with R</title>
+<title>Advanced Data Analysis with R - Resources</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -27,7 +25,7 @@ ul.task-list{list-style: none;}
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./01-workflow.html" rel="next">
+<link href="./references.html" rel="prev">
 <link href="./favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -62,8 +60,8 @@ ul.task-list{list-style: none;}
 
 
 <link rel="stylesheet" href="style.css">
-<meta property="og:title" content="Advanced Data Analysis with R">
-<meta property="og:description" content="and python!">
+<meta property="og:title" content="Advanced Data Analysis with R - Resources">
+<meta property="og:description" content="Learning R can be quite the journey. This is why I am collecting useful links to more resources on this extra page.">
 <meta property="og:site-name" content="Advanced Data Analysis with R">
 </head>
 
@@ -73,7 +71,7 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Advanced Data Analysis with R</h1>
+      <h1 class="quarto-secondary-nav-title">Resources</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -102,7 +100,7 @@ ul.task-list{list-style: none;}
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Hello and welcome!</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Hello and welcome!</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -145,7 +143,7 @@ ul.task-list{list-style: none;}
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./resources.html" class="sidebar-item-text sidebar-link">Resources</a>
+  <a href="./resources.html" class="sidebar-item-text sidebar-link active">Resources</a>
   </div>
 </li>
       </ul>
@@ -159,115 +157,167 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Hello and welcome!</a>
-  <ul class="collapse">
-  <li><a href="#prerequisits" id="toc-prerequisits" class="nav-link" data-scroll-target="#prerequisits">Prerequisits</a></li>
-  <li><a href="#structure" id="toc-structure" class="nav-link" data-scroll-target="#structure">Structure of the course</a>
-  <ul class="collapse">
-  <li><a href="#exe" id="toc-exe" class="nav-link" data-scroll-target="#exe">Exercises</a></li>
-  <li><a href="#seminar" id="toc-seminar" class="nav-link" data-scroll-target="#seminar">Seminar</a></li>
-  <li><a href="#discord" id="toc-discord" class="nav-link" data-scroll-target="#discord">Discord and signup</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#learning-the-tidyverse" id="toc-learning-the-tidyverse" class="nav-link active" data-scroll-target="#learning-the-tidyverse">Learning the tidyverse</a></li>
+  <li><a href="#learning-rmarkdown" id="toc-learning-rmarkdown" class="nav-link" data-scroll-target="#learning-rmarkdown">Learning Rmarkdown</a></li>
+  <li><a href="#learning-r-in-general" id="toc-learning-r-in-general" class="nav-link" data-scroll-target="#learning-r-in-general">Learning R in general</a></li>
+  <li><a href="#learning-statistics" id="toc-learning-statistics" class="nav-link" data-scroll-target="#learning-statistics">Learning Statistics</a></li>
+  <li><a href="#helpful-tools" id="toc-helpful-tools" class="nav-link" data-scroll-target="#helpful-tools">Helpful tools</a></li>
+  <li><a href="#talks-podcasts-blogs-videos" id="toc-talks-podcasts-blogs-videos" class="nav-link" data-scroll-target="#talks-podcasts-blogs-videos">Talks, Podcasts, Blogs, Videos</a></li>
+  <li><a href="#misc" id="toc-misc" class="nav-link" data-scroll-target="#misc">Misc</a></li>
+  <li><a href="#package-documentation" id="toc-package-documentation" class="nav-link" data-scroll-target="#package-documentation">Package Documentation</a></li>
+  <li><a href="#books-and-manuals" id="toc-books-and-manuals" class="nav-link" data-scroll-target="#books-and-manuals">Books and Manuals</a></li>
+  <li><a href="#getting-help" id="toc-getting-help" class="nav-link" data-scroll-target="#getting-help">Getting Help</a></li>
+  <li><a href="#lists-of-resources" id="toc-lists-of-resources" class="nav-link" data-scroll-target="#lists-of-resources">Lists of Resources</a></li>
+  <li><a href="#packages-that-enable-this-lecture-format" id="toc-packages-that-enable-this-lecture-format" class="nav-link" data-scroll-target="#packages-that-enable-this-lecture-format">Packages that enable this lecture format</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jmbuhr/dataadvanced/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/jmbuhr/dataadvanced/blob/main/index.qmd" class="toc-action">View source</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jmbuhr/dataadvanced/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/jmbuhr/dataadvanced/blob/main/resources.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Advanced Data Analysis with R</h1>
-<p class="subtitle lead">and python!</p>
+<h1 class="title d-none d-lg-block">Resources</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Jannik Buhr </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">July 18, 2022</p>
-    </div>
-  </div>
     
   </div>
   
 
 </header>
 
-<section id="welcome" class="level1 unnumbered">
-<h1 class="unnumbered">Hello and welcome!</h1>
-<p>… to the latest iteration of my advanced R course, where we will learn to analyse data in style.</p>
-<!-- ::: { .alert .alert-primary} -->
-<!-- **Current course dates**\ -->
-<!-- WS22/23\ -->
-<!-- 2022-10-21 -- 2022-12-16\ -->
-<!-- See [structure of the course](#structure)\ -->
-<!-- Lecture online in your own time\ -->
-<!-- Seminar weekly on Fridays at 9:15 – 10:45\ -->
-<!-- Sign-up (Heidelberg University students): see [discord](#discord)\ -->
-<!-- Language: Lectures are in English but the seminar can be in German if you choose so -->
-<!-- (in any case, you can always ask questions in German as well). -->
-<!-- ::: -->
-<!-- ::: {.video-container} -->
-<!-- <iframe class="video" src="https://www.youtube.com/embed/GguzPRquTLI?vq=hd1080" allowfullscreen></iframe> -->
-<!-- ::: -->
-<section id="prerequisits" class="level2">
-<h2 class="anchored" data-anchor-id="prerequisits">Prerequisits</h2>
-<p>Please complete the course <a href="https://jmbuhr.de/dataintro/">Introduction to Data Analysis with R</a> prior to this one.</p>
+<p>Learning R can be quite the journey. This is why I am collecting useful links to more resources on this extra page. Some will help you understand the topics covered, some dive deeper and some will be interesting if you want to discover more cool things you can do with R.</p>
+<section id="learning-the-tidyverse" class="level2">
+<h2 class="anchored" data-anchor-id="learning-the-tidyverse">Learning the tidyverse</h2>
+<ul>
+<li><a href="https://r4ds.had.co.nz/">R for Data Science</a> <span class="citation" data-cites="wickhamDataScienceImport2017">(<a href="references.html#ref-wickhamDataScienceImport2017" role="doc-biblioref"><strong>wickhamDataScienceImport2017?</strong></a>)</span></li>
+<li><a href="https://ggplot2-book.org/index.html">The ggplot2 book</a></li>
+<li><a href="https://www.rfordatasci.com/">R4DS online Community</a></li>
+<li><a href="https://www.rstudio.com/resources/cheatsheets/">RStudio Cheat Sheets!</a></li>
+<li><a href="https://moderndive.com/">The Modern Dive</a> <span class="citation" data-cites="kimStatisticalInferenceData2019">(<a href="references.html#ref-kimStatisticalInferenceData2019" role="doc-biblioref"><strong>kimStatisticalInferenceData2019?</strong></a>)</span></li>
+<li><a href="https://education.rstudio.com/">RStudio Education</a></li>
+</ul>
 </section>
-<section id="structure" class="level2">
-<h2 class="anchored" data-anchor-id="structure">Structure of the course</h2>
-<p>Most participants will be biochemistry bachelor (and master) students, but the material is open to anyone!</p>
+<section id="learning-rmarkdown" class="level2">
+<h2 class="anchored" data-anchor-id="learning-rmarkdown">Learning Rmarkdown</h2>
 <ul>
-<li>There are 8 lectures in total, each accompanied by:
+<li><a href="https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-cheatsheet-2.0.pdf">rmarkdown cheatsheet</a></li>
+<li><a href="https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">rmarkdown reference</a></li>
+<li><a href="https://pandoc.org/MANUAL.html#pandocs-markdown">pandoc manual (advanced)</a></li>
+<li><a href="https://reproducible-analysis-workshop.readthedocs.io/en/latest/6.RMarkdown-knitr.html">rmarkdown for reproducible analysis</a></li>
+<li><a href="https://rmarkdown.rstudio.com/index.html">rmarkdown website</a></li>
+</ul>
+</section>
+<section id="learning-r-in-general" class="level2">
+<h2 class="anchored" data-anchor-id="learning-r-in-general">Learning R in general</h2>
 <ul>
-<li>A video of the lecture at the top of each page</li>
-<li>The lecture script, which consists of the code written during the lecture (plus some more code to generate illustrative graphics) and explanations</li>
-<li><a href="#exe">Exercises</a> to complete and send in</li>
-<li>A <a href="#seminar">seminar</a> to discuss the exercises</li>
-<li>A <a href="#discord">discord</a> server to ask questions and share solutions</li>
+<li><a href="https://adv-r.hadley.nz/">Advanced R</a> <span class="citation" data-cites="wickhamAdvancedSecondEdition2019">(<a href="references.html#ref-wickhamAdvancedSecondEdition2019" role="doc-biblioref"><strong>wickhamAdvancedSecondEdition2019?</strong></a>)</span></li>
+<li><a href="https://rstudio-education.github.io/hopr/">Hands on Programming with R</a> <span class="citation" data-cites="grolemundHandsOnProgrammingWrite2014">(<a href="references.html#ref-grolemundHandsOnProgrammingWrite2014" role="doc-biblioref"><strong>grolemundHandsOnProgrammingWrite2014?</strong></a>)</span></li>
+<li><a href="http://r-pkgs.had.co.nz/">R Packages</a> <span class="citation" data-cites="wickhamPackagesOrganizeTest2015">(<a href="references.html#ref-wickhamPackagesOrganizeTest2015" role="doc-biblioref"><strong>wickhamPackagesOrganizeTest2015?</strong></a>)</span></li>
+<li><a href="https://socviz.co/index.html">Data Visualization: A Practical Introduction</a> <span class="citation" data-cites="healyDataVisualizationPractical2018">(<a href="references.html#ref-healyDataVisualizationPractical2018" role="doc-biblioref"><strong>healyDataVisualizationPractical2018?</strong></a>)</span></li>
+<li><a href="http://www.cookbook-r.com/Graphs/">Graph Cookbook</a> <span class="citation" data-cites="changGraphicsCookbookPractical2013">(<a href="references.html#ref-changGraphicsCookbookPractical2013" role="doc-biblioref"><strong>changGraphicsCookbookPractical2013?</strong></a>)</span></li>
+</ul>
+</section>
+<section id="learning-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="learning-statistics">Learning Statistics</h2>
+<ul>
+<li><a href="http://www.intuitivebiostatistics.com/">Intuitive Biostatistics</a> <span class="citation" data-cites="motulskyIntuitiveBiostatisticsNonmathematical2017">(<a href="references.html#ref-motulskyIntuitiveBiostatisticsNonmathematical2017" role="doc-biblioref"><strong>motulskyIntuitiveBiostatisticsNonmathematical2017?</strong></a>)</span></li>
+<li><a href="https://www.statisticsdonewrong.com/">Statistics Done Wrong</a> <span class="citation" data-cites="reinhartStatisticsDoneWrong2015">(<a href="references.html#ref-reinhartStatisticsDoneWrong2015" role="doc-biblioref"><strong>reinhartStatisticsDoneWrong2015?</strong></a>)</span></li>
+<li><a href="https://statquest.org/video-index/#statistics">StatQuest!!! with Josh Starner</a></li>
+<li><a href="https://www.huber.embl.de/msmb/index.html">Modern Statistics for Modern Biology</a></li>
+</ul>
+</section>
+<section id="helpful-tools" class="level2">
+<h2 class="anchored" data-anchor-id="helpful-tools">Helpful tools</h2>
+<ul>
+<li><a href="https://github.com/dreamRs/esquisse">Generate ggplots via graphical user interface with esquisee</a></li>
+</ul>
+</section>
+<section id="talks-podcasts-blogs-videos" class="level2">
+<h2 class="anchored" data-anchor-id="talks-podcasts-blogs-videos">Talks, Podcasts, Blogs, Videos</h2>
+<p>Just some of the people with inspiring blogposts, videos and the likes.</p>
+<ul>
+<li>David Robinson
+<ul>
+<li><a href="https://www.youtube.com/user/safe4democracy">YouTube</a></li>
+<li><a href="http://varianceexplained.org/">website</a></li>
+</ul></li>
+<li>Julia Silge
+<ul>
+<li><a href="https://www.youtube.com/c/JuliaSilge/">YouTube</a></li>
+<li><a href="https://juliasilge.com/">website</a></li>
+</ul></li>
+<li>Alison Hill
+<ul>
+<li><a href="https://alison.rbind.io/">website</a></li>
+</ul></li>
+<li>Thomas Lin Pedersen
+<ul>
+<li><a href="https://www.data-imaginist.com/">website</a></li>
 </ul></li>
 </ul>
-<p>In addition to the 8 regular lectures + follow up seminars, there is an introductory seminar in the first week, before the first lecture.</p>
+</section>
+<section id="misc" class="level2">
+<h2 class="anchored" data-anchor-id="misc">Misc</h2>
 <ul>
-<li>October 21: First seminar</li>
-<li>October 28: Seminar for the first lecture</li>
-<li>December 16: Seminar for the last lecture</li>
+<li><a href="https://github.com/allisonhorst/stats-illustrations">Cute and insightful illustrations</a> <span class="citation" data-cites="ArtworkAllisonHorst">(<a href="references.html#ref-ArtworkAllisonHorst" role="doc-biblioref"><strong>ArtworkAllisonHorst?</strong></a>)</span></li>
+<li><a href="https://happygitwithr.com/">Happy Git with R</a></li>
 </ul>
-<p>The first seminar is dedicated to helping you get your laptops set up for the course, show the course structure and explain core concepts.</p>
-<p>I do recommend to watch the lecture in your own time, and then use the lecture script afterwards to look up concepts and code you want to revisit. Code chunks also have a copy-button, which is helpful for quickly playing around with it, but make sure you actually walk through the lecture and do the typing first, because muscle memory will server you well in the future.</p>
-<section id="exe" class="level3">
-<h3 class="anchored" data-anchor-id="exe">Exercises</h3>
-<p>To complete the course, hand in at least 5 out of 8 exercises. The important part here is not that each exercise is a perfect solution, but if you encounter questions and struggles during your attempt of the exercise, make sure to include those pain points as well so that we can cover those in the <a href="#seminar">Seminar</a>. Please hand in your solutions <strong>before</strong> the seminar via a direct message on <a href="#discord">discord</a>. The earlier in the week you submit your solutions, the more time I have to prepare answers for the seminar.</p>
 </section>
-<section id="seminar" class="level3">
-<h3 class="anchored" data-anchor-id="seminar">Seminar</h3>
-<p>Each week, we will meet to discuss the exercises and answer any questions that might have have popped up. Currently it looks like it will be possible to do so in person, in which case we will meet here:</p>
-<blockquote class="blockquote">
-<p>TO BE ANNOUNCED</p>
-</blockquote>
-<p>Even though these are technically computer rooms, it would be great if you could bring your own laptop so that you can code along and known that you will be able to apply what you learned after the course as well. Also, we might not be able to install the necessary software in the computer room.</p>
+<section id="package-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="package-documentation">Package Documentation</h2>
+<ul>
+<li><a href="https://www.tidyverse.org/">tidyverse</a></li>
+<li><a href="https://www.tidymodels.org/">tidymodels</a></li>
+<li><a href="https://rmarkdown.rstudio.com/docs/">rmarkdown</a></li>
+<li><a href="https://readr.tidyverse.org/">readr</a></li>
+<li><a href="https://dplyr.tidyverse.org/">dplyr</a></li>
+<li><a href="https://ggplot2.tidyverse.org/">ggplot</a></li>
+<li><a href="https://tidyr.tidyverse.org/">tidyr</a></li>
+<li><a href="https://stringr.tidyverse.org/">stringr</a></li>
+<li><a href="https://purrr.tidyverse.org/">purrr</a></li>
+<li><a href="https://ragg.r-lib.org/">ragg</a></li>
+</ul>
 </section>
-<section id="discord" class="level3">
-<h3 class="anchored" data-anchor-id="discord">Discord and signup</h3>
-<!-- If you are a biochemistry student at Heidelberg University, click on this link: <https://discord.gg/y54pnjkDyw> to join our discord server. -->
-<!-- To sign up for the course, send a message to me (Jannik) with your **full name** and **matriculation number** so that we can put the course onto your official transcript of records. -->
-<!-- If the link doesn't work, please send me a message via my [contact form](https://jmbuhr.de/contact). -->
-<!-- On the server, you will be able to ask questions that can be answered by me and your fellow learners, hand in the exercises and receive feedback. -->
+<section id="books-and-manuals" class="level2">
+<h2 class="anchored" data-anchor-id="books-and-manuals">Books and Manuals</h2>
+<ul>
+<li><a href="https://www.tmwr.org/">Tidymodels book</a></li>
+<li><a href="https://ggplot2-book.org/">ggplot book</a></li>
+<li><a href="https://bookdown.org/yihui/rmarkdown-cookbook/">Rmarkdown Cookbook</a></li>
+<li><a href="https://bookdown.org/yihui/rmarkdown/">Rmarkdown Book</a></li>
+</ul>
+</section>
+<section id="getting-help" class="level2">
+<h2 class="anchored" data-anchor-id="getting-help">Getting Help</h2>
+<ul>
+<li><a href="https://www.tidyverse.org/help/#reprex">How to find help</a></li>
+<li><a href="https://www.rfordatasci.com/">R4DS online learning community</a></li>
+</ul>
+</section>
+<section id="lists-of-resources" class="level2">
+<h2 class="anchored" data-anchor-id="lists-of-resources">Lists of Resources</h2>
+<p>The meta section. This is a list of lists:</p>
+<ul>
+<li><a href="https://www.bigbookofr.com/">big book of R</a></li>
+<li><a href="https://rfortherestofus.com/resources/">r for the rest of us</a></li>
+</ul>
+</section>
+<section id="packages-that-enable-this-lecture-format" class="level2">
+<h2 class="anchored" data-anchor-id="packages-that-enable-this-lecture-format">Packages that enable this lecture format</h2>
+<ul>
+<li>R by <span class="citation" data-cites="rcoreteamLanguageEnvironmentStatistical2020a">(<a href="references.html#ref-rcoreteamLanguageEnvironmentStatistical2020a" role="doc-biblioref"><strong>rcoreteamLanguageEnvironmentStatistical2020a?</strong></a>)</span></li>
+<li>knitr by <span class="citation" data-cites="knitr">(<a href="references.html#ref-knitr" role="doc-biblioref"><strong>knitr?</strong></a>)</span></li>
+<li>rmarkdown by <span class="citation" data-cites="rmarkdown">(<a href="references.html#ref-rmarkdown" role="doc-biblioref"><strong>rmarkdown?</strong></a>)</span></li>
+<li>xaringan by <span class="citation" data-cites="xieXaringanPresentationNinja2020">(<a href="references.html#ref-xieXaringanPresentationNinja2020" role="doc-biblioref"><strong>xieXaringanPresentationNinja2020?</strong></a>)</span></li>
+</ul>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -473,11 +523,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./references.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">References</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01-workflow.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Advanced workflows and tools</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

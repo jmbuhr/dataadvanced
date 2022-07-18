@@ -1,1 +1,233 @@
-[{"path":"index.html","id":"welcome","chapter":"Hello and welcome!","heading":"Hello and welcome!","text":"… latest iteration advanced R course.Hi , course still \nconstruction, everything subject\nchange videos, yet.Current course dates\nSS22\n25.04.22 – 17.06.22\nSeminar weekly Fridays 9:15 – 10:45\n(+Lecture online time)\nSign-: see discord","code":""},{"path":"index.html","id":"prerequisits","chapter":"Hello and welcome!","heading":"0.1 Prerequisits","text":"Please complete course Introduction Data Analysis R prior one.","code":""},{"path":"index.html","id":"structure-of-the-course","chapter":"Hello and welcome!","heading":"0.2 Structure of the course","text":"current course SS22 Heidelberg University.\nparticipants biochemistry master (bachelor) students,\nmaterial open anyone!8 lectures total, accompanied :\nvideo lecture top page\nlecture script, consists code written lecture\n(plus code generate illustrative graphics) well explanations\nExercises complete send \nseminar discuss exercises\ndiscord server ask questions share solutions\nvideo lecture top pageThe lecture script, consists code written lecture\n(plus code generate illustrative graphics) well explanationsExercises complete send inA seminar discuss exercisesA discord server ask questions share solutionsI recommend watch lecture time, use lecture script afterwards look concepts code want revisit.\nCode chunks also copy-button, helpful quickly playing around , make sure actually walk lecture typing first,\nmuscle memory server well future.","code":""},{"path":"index.html","id":"exe","chapter":"Hello and welcome!","heading":"0.2.1 Exercises","text":"complete course, hand least 5 8 exercises.\nimportant part exercise perfect solution,\nencounter questions struggles attempt exercise, make sure include pain points well can cover Seminar.\nPlease hand solutions seminar via direct message [discord].\nearlier week submit solutions,\ntime prepare answers seminar.","code":""},{"path":"index.html","id":"seminar","chapter":"Hello and welcome!","heading":"0.2.2 Seminar","text":"week, meet discuss exercises answer questions might popped .\ntime writing, still\npandemic going .\nsince computational work\nanyways likely just\nmeet online (link discord).","code":""},{"path":"index.html","id":"discord","chapter":"Hello and welcome!","heading":"0.2.3 Discord and signup","text":"biochemistry student Heidelberg University,\nclick link: https://discord.gg/zMzSbdrN4w join discord server sign course.\nlink doesn’t work, please send message via contact formOnce sure drop message name name matriculation number can put course onto official transcript records.\nserver, able ask questions can answered fellow learners, hand exercises receive feedback.Discord good choice , messages support code formatting can easily open voice call question get complicated.","code":""},{"path":"intro.html","id":"intro","chapter":"Lesson 1 Advanced workflows and tools","heading":"Lesson 1 Advanced workflows and tools","text":"Hi , course still \nconstruction, everything subject\nchange videos, yet.","code":""},{"path":"intro.html","id":"preamble-sharpening-the-axe","chapter":"Lesson 1 Advanced workflows and tools","heading":"1.1 Preamble: Sharpening the axe","text":"great quote attributed Abraham Lincoln:“Give six hours chop tree spend first four sharpening axe.” — Abraham LincolnAnd verify actually said , message really resonates .\n, actually two parts .\nfirst part obvious one.\nreally know tools well take care , save time long run.\nChopping tree simply faster well-sharpened axe, even initial time lost sharpening taken account.\neven xkcd comic can uses table evaluate save time task long run automating depending long takes build automation:Source: https://xkcd.com/1205/can applied learning tool mastering skill.\nlooking tips tricks tool mastery terms time saved leaves important aspect!\nargue often, even though mastery certain tool might save time long run, still huge benefit .benefit cognition, way brains work.\nstands, working memory tiny.\nmean really, really tiny.\nnumber 7 often floated around ballpark number chunks can actively hold memory work time1 seems largely correct.\ncan think complex thoughts, might ask?\nSurely even sentence one seven words, let alone individual characters!\ntrick lies chunking encoding information way multiple individual pieces information stored just one chunk.\nread word already know, don’t actively think individual letters anymore, can rely long term memory store reference word, even concept word entails.\nknow something can rely .\nfrees mind think things bigger picture.come back tree-chopping-analogy:practice chopping tree don’t think individual motions anymore, axe sharp can cut tree single swing, mind free think entire forest.goes learning tools data analysis well.\npractice skills master theses tools, guarantee going ideas insights able find details muscle memory.\nwithout ado, top recommendations mastery:","code":""},{"path":"intro.html","id":"tools-and-mastery","chapter":"Lesson 1 Advanced workflows and tools","heading":"1.2 Tools and mastery","text":"","code":""},{"path":"intro.html","id":"touch-typing","chapter":"Lesson 1 Advanced workflows and tools","heading":"1.2.1 Touch typing","text":"theses single versatile useful skill.\nSince keyboard – foreseeable future – primary input method interacting computer fast efficient way, mastering keyboard go long way.\nhelp writing code talking R fluently, also help bring thoughts screen faster.\nThink possibilities typing near speed thought!\ntwo websites deliberately practicing touch typing:https://www.keybr.com/https://monkeytype.com/recommend start keybr practice individual motions combinations move monkeytype later want work real words.","code":""},{"path":"intro.html","id":"your-text-editor-and-ide","chapter":"Lesson 1 Advanced workflows and tools","heading":"1.2.2 Your text editor and ide","text":"case, course RStudio, IDE R (Integrated Development Environment).","code":""},{"path":"intro.html","id":"your-operating-system","chapter":"Lesson 1 Advanced workflows and tools","heading":"1.2.3 Your operating system","text":"","code":""},{"path":"intro.html","id":"a-personal-note","chapter":"Lesson 1 Advanced workflows and tools","heading":"1.3 A personal note","text":"course, thing much optimization.\nprone sharpening axe much eventually forget actually chopping.\nfact, part excited teach courses.\nspend much time learning intricacies tools using mental models required teach ,","code":""},{"path":"intro.html","id":"goals-for-today","chapter":"Lesson 1 Advanced workflows and tools","heading":"1.4 Goals for today","text":"learn fully utilize course materialengage R communityfind resources help fasterimprove workflow","code":""},{"path":"intro.html","id":"keep-track-of-your-code-version-management-with-git","chapter":"Lesson 1 Advanced workflows and tools","heading":"1.5 Keep track of your code: version management with git","text":"","code":""},{"path":"intro.html","id":"share-code-and-help-others-on-github","chapter":"Lesson 1 Advanced workflows and tools","heading":"1.6 Share code and help others on github","text":"","code":""},{"path":"intro.html","id":"re-use-functions-with-a-personal-package","chapter":"Lesson 1 Advanced workflows and tools","heading":"1.7 Re-use functions with a personal package","text":"write personal package contains custom ggplot2 themepublish package GitHub","code":""},{"path":"intro.html","id":"install-packages-from-different-sources-cran-github-and-bioconductor","chapter":"Lesson 1 Advanced workflows and tools","heading":"1.8 Install packages from different sources: cran, github and bioconductor","text":"remotes/devtoolsrenv","code":""},{"path":"intro.html","id":"get-help-faster-with-reproducible-examples-reprex","chapter":"Lesson 1 Advanced workflows and tools","heading":"1.9 Get help faster with reproducible examples: reprex","text":"","code":""},{"path":"intro.html","id":"resources","chapter":"Lesson 1 Advanced workflows and tools","heading":"1.10 Resources","text":"https://git-scm.com/https://github.com/hits-mbm-dev/git-introhttps://r-pkgs.org/https://reprex.tidyverse.org/","code":""},{"path":"intro.html","id":"exercises","chapter":"Lesson 1 Advanced workflows and tools","heading":"1.11 Exercises","text":"","code":""},{"path":"intro.html","id":"make-it-your-own","chapter":"Lesson 1 Advanced workflows and tools","heading":"1.11.1 Make it your own!","text":"introductory course last semester talked different ways expressing spread measurements around mean.\nprocess found function R standard deviation (sd), built-function standard error mean.\nwrote tiny function called sem, calculates just .\nannoying put function every one analysis scripts!Write small package, exports sem function publish GitHub.\nMake sure able install package well.\nexercise submission week, simply send link repository.\nRemember ask questions discord server get stuck!Bonus Tasks:Write documentation sem function roxygen experience joy seeing words help page.Extend package custom ggplot theme function.","code":""},{"path":"advanced-communication.html","id":"advanced-communication","chapter":"Lesson 2 Advanced Communication","heading":"Lesson 2 Advanced Communication","text":"","code":""},{"path":"advanced-communication.html","id":"build-a-personal-website-for-free","chapter":"Lesson 2 Advanced Communication","heading":"2.1 Build a personal website (for free)","text":"website anyway?overview packages: distill, blogdownbuild hugo apéro site: https://hugo-apero.netlify.app/quarto!","code":""},{"path":"advanced-communication.html","id":"make-presentations-with-rmarkdown","chapter":"Lesson 2 Advanced Communication","heading":"2.2 Make presentations with rmarkdown","text":"overview packages: PowerPoint, xaringan, revealjsinclude plots codework larger projects, include plots Rmd documents","code":""},{"path":"advanced-communication.html","id":"resources-1","chapter":"Lesson 2 Advanced Communication","heading":"2.3 Resources","text":"https://bookdown.org/yihui/blogdown/https://gohugo.io/https://github.com/yihui/xaringanhttps://xaringan.gallery/https://github.com/gadenbuie/xaringanExtra/https://github.com/rstudio/revealjs","code":""},{"path":"advanced-communication.html","id":"exercises-1","chapter":"Lesson 2 Advanced Communication","heading":"2.4 Exercises","text":"","code":""},{"path":"manage-large-projects-with-targets.html","id":"manage-large-projects-with-targets","chapter":"Lesson 3 Manage large projects with targets","heading":"Lesson 3 Manage large projects with targets","text":"","code":""},{"path":"stats-time.html","id":"stats-time","chapter":"Lesson 4 Stats time!","heading":"Lesson 4 Stats time!","text":"… ultimate guide choosing hypothesis test.recap new tests","code":"\nlibrary(tidyverse)"},{"path":"stats-time.html","id":"lingo","chapter":"Lesson 4 Stats time!","heading":"4.1 Lingo","text":"outcome ~ independent variable(s)","code":""},{"path":"stats-time.html","id":"compare-proportions-and-counts-outcome-binomial","chapter":"Lesson 4 Stats time!","heading":"4.2 Compare proportions and counts (outcome: binomial)","text":"","code":""},{"path":"stats-time.html","id":"case-control-studies","chapter":"Lesson 4 Stats time!","heading":"4.3 Case-control studies","text":"","code":""},{"path":"stats-time.html","id":"survival-analysis-outcome-survival-times","chapter":"Lesson 4 Stats time!","heading":"4.4 Survival analysis (outcome: survival times)","text":"","code":""},{"path":"stats-time.html","id":"compare-two-distributions-outcome-continuous-gaussian","chapter":"Lesson 4 Stats time!","heading":"4.5 Compare two distributions (outcome: continuous gaussian)","text":"","code":""},{"path":"stats-time.html","id":"unpaired-t-test","chapter":"Lesson 4 Stats time!","heading":"4.5.1 Unpaired t-test","text":"","code":"\nt_example <- tibble(\n  x = rnorm(3, 10),\n  y = rnorm(3, 14) \n) %>%\n  pivot_longer(x:y)\n\nt_example %>% \n  ggplot(aes(name, value)) +\n  geom_jitter(width = 0.05) +\n  expand_limits(y = 0)\nt.test(value ~ name, data = t_example, var.equal = TRUE)\n    Two Sample t-test\n\ndata:  value by name\nt = -9.6133, df = 4, p-value = 0.0006546\nalternative hypothesis: true difference in means between group x and group y is not equal to 0\n95 percent confidence interval:\n -5.264448 -2.904999\nsample estimates:\nmean in group x mean in group y \n       9.654961       13.739685 \nmodel <- lm(value ~ name, data = t_example)\nsummary(model)\nCall:\nlm(formula = value ~ name, data = t_example)\n\nResiduals:\n      1       2       3       4       5       6 \n-0.4430  0.5734  0.5854 -0.4109 -0.1424 -0.1625 \n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept)   9.6550     0.3005  32.135 5.59e-06 ***\nnamey         4.0847     0.4249   9.613 0.000655 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 0.5204 on 4 degrees of freedom\nMultiple R-squared:  0.9585,    Adjusted R-squared:  0.9481 \nF-statistic: 92.41 on 1 and 4 DF,  p-value: 0.0006546"},{"path":"stats-time.html","id":"paired-t-test","chapter":"Lesson 4 Stats time!","heading":"4.5.2 Paired t-test","text":"","code":""},{"path":"stats-time.html","id":"nonparametric-methods-outcome-continuous-nongaussian","chapter":"Lesson 4 Stats time!","heading":"4.5.3 Nonparametric methods (outcome: continuous nongaussian)","text":"","code":""},{"path":"stats-time.html","id":"compare-multiple-distributions-outcome-continuous-gaussian","chapter":"Lesson 4 Stats time!","heading":"4.6 Compare multiple distributions (outcome: continuous gaussian)","text":"","code":""},{"path":"stats-time.html","id":"one-way-anova","chapter":"Lesson 4 Stats time!","heading":"4.6.1 One-way anova","text":"","code":""},{"path":"stats-time.html","id":"two-way-anova","chapter":"Lesson 4 Stats time!","heading":"4.6.2 Two-way anova","text":"","code":""},{"path":"stats-time.html","id":"comparison-to-multiple-linear-regression","chapter":"Lesson 4 Stats time!","heading":"4.6.3 Comparison to (multiple) linear regression","text":"https://scientificallysound.org/2017/06/08/t-test--linear-models-r/","code":""},{"path":"stats-time.html","id":"choose-a-statistical-test","chapter":"Lesson 4 Stats time!","heading":"4.7 Choose a statistical test","text":"","code":""},{"path":"machine-learning-with-tidymodels.html","id":"machine-learning-with-tidymodels","chapter":"Lesson 5 Machine learning with tidymodels","heading":"Lesson 5 Machine learning with tidymodels","text":"","code":""},{"path":"machine-learning-with-tidymodels.html","id":"what-is-machine-learning","chapter":"Lesson 5 Machine learning with tidymodels","heading":"5.1 What is machine learning?","text":"","code":""},{"path":"omics-go-big.html","id":"omics-go-big","chapter":"Lesson 6 Omics: go big!","heading":"Lesson 6 Omics: go big!","text":"","code":""},{"path":"omics-go-big.html","id":"what-is-omics","chapter":"Lesson 6 Omics: go big!","heading":"6.1 What is “omics”?","text":"","code":""},{"path":"references.html","id":"references","chapter":"References","heading":"References","text":"","code":""}]
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Advanced Data Analysis with R",
+    "section": "",
+    "text": "… to the latest iteration of my advanced R course, where we will learn to analyse data in style.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlease complete the course Introduction to Data Analysis with R prior to this one.\n\n\n\nMost participants will be biochemistry bachelor (and master) students, but the material is open to anyone!\n\nThere are 8 lectures in total, each accompanied by:\n\nA video of the lecture at the top of each page\nThe lecture script, which consists of the code written during the lecture (plus some more code to generate illustrative graphics) and explanations\nExercises to complete and send in\nA seminar to discuss the exercises\nA discord server to ask questions and share solutions\n\n\nIn addition to the 8 regular lectures + follow up seminars, there is an introductory seminar in the first week, before the first lecture.\n\nOctober 21: First seminar\nOctober 28: Seminar for the first lecture\nDecember 16: Seminar for the last lecture\n\nThe first seminar is dedicated to helping you get your laptops set up for the course, show the course structure and explain core concepts.\nI do recommend to watch the lecture in your own time, and then use the lecture script afterwards to look up concepts and code you want to revisit. Code chunks also have a copy-button, which is helpful for quickly playing around with it, but make sure you actually walk through the lecture and do the typing first, because muscle memory will server you well in the future.\n\n\nTo complete the course, hand in at least 5 out of 8 exercises. The important part here is not that each exercise is a perfect solution, but if you encounter questions and struggles during your attempt of the exercise, make sure to include those pain points as well so that we can cover those in the Seminar. Please hand in your solutions before the seminar via a direct message on discord. The earlier in the week you submit your solutions, the more time I have to prepare answers for the seminar.\n\n\n\nEach week, we will meet to discuss the exercises and answer any questions that might have have popped up. Currently it looks like it will be possible to do so in person, in which case we will meet here:\n\nTO BE ANNOUNCED\n\nEven though these are technically computer rooms, it would be great if you could bring your own laptop so that you can code along and known that you will be able to apply what you learned after the course as well. Also, we might not be able to install the necessary software in the computer room."
+  },
+  {
+    "objectID": "01-workflow.html",
+    "href": "01-workflow.html",
+    "title": "Advanced workflows and tools",
+    "section": "",
+    "text": "Hi there, this course is still under construction, so everything is subject to change and there are no videos, yet."
+  },
+  {
+    "objectID": "01-workflow.html#preamble-sharpening-the-axe",
+    "href": "01-workflow.html#preamble-sharpening-the-axe",
+    "title": "Advanced workflows and tools",
+    "section": "Preamble: Sharpening the axe",
+    "text": "Preamble: Sharpening the axe\nThere is this great quote attributed to Abraham Lincoln:\n\n“Give me six hours to chop down a tree and I will spend the first four sharpening the axe.” — Abraham Lincoln\n\nAnd while I did not verify that he actually said that, the message really resonates with me. To me, are actually two parts to this. The first part is the more obvious one. If you really know your tools well and take care of them, you save time in the long run. Chopping down a tree is simply faster with a well-sharpened axe, even with the initial time lost to sharpening taken into account. There is even an xkcd comic you can uses as a table to evaluate if you save more time on a task in the long run by automating it depending on how long it takes to build the automation:\n\n\n\nSource: https://xkcd.com/1205/\n\n\nThe same can be applied to learning a tool or mastering a skill. But only looking at tips and tricks and tool mastery in terms of the time saved leaves out the most important aspect! I argue that most often, even though mastery of a certain tool might not save you any time in the long run, there is still a huge benefit to it.\nThis benefit has to do with cognition, the way our brains work. As it stands, our working memory is tiny. I mean really, really tiny. The number 7 is often floated around as a ballpark for the number of chunks we can actively hold in memory to work with at the same time (“The Magical Number Seven, Plus or Minus Two: Some Limits on Our Capacity for Processing Information. - PsycNET,” n.d.) and it seems to be largely correct. How then can we think more complex thoughts, you might ask? Surely even the sentence before this one had more than seven words, let alone individual characters! The trick lies in chunking and encoding information in such a way that multiple individual pieces of information are stored as just one chunk. When you read a word you already know, you don’t have to actively think about individual letters anymore, you can rely on your long term memory to store a reference to that word, or even the concept that the word entails. The more you know about something the more you can rely on that. This frees up your mind to think about other things or the bigger picture.\nTo come back to the tree-chopping-analogy:\n\nIf you practice chopping a tree such that you don’t have to think about individual motions anymore, and your axe is so sharp that you can cut down a tree in a single swing, then your mind will be free to think about the entire forest.\n\nAnd the same goes for learning your tools for data analysis as well. If you practice these skills and master theses tools, I guarantee that you are going to have ideas and insights you are only able to find because the details are muscle memory. So without further ado, here are my top recommendations for mastery:"
+  },
+  {
+    "objectID": "01-workflow.html#tools-and-mastery",
+    "href": "01-workflow.html#tools-and-mastery",
+    "title": "Advanced workflows and tools",
+    "section": "Tools and mastery",
+    "text": "Tools and mastery\n\nTouch typing\nOf all of theses this is the single most versatile and useful skill. Since the keyboard is – and will be for the foreseeable future – the primary input method for interacting with a computer in a fast and efficient way, mastering your keyboard will go a long way. This will not only help you in writing code and talking to R more fluently, it will also help you bring your thoughts to the screen faster. Think about the possibilities of typing near the speed of thought! Here are two websites for deliberately practicing touch typing:\n\nhttps://www.keybr.com/\nhttps://monkeytype.com/\n\nI recommend to start with keybr to practice individual motions and combinations and move to monkeytype later when you want to work on real words.\n\n\nYour text editor and ide\nIn our case, this is of course RStudio, the IDE for R (Integrated Development Environment).\n\n\n\nYour operating system"
+  },
+  {
+    "objectID": "01-workflow.html#a-personal-note",
+    "href": "01-workflow.html#a-personal-note",
+    "title": "Advanced workflows and tools",
+    "section": "A personal note",
+    "text": "A personal note\nOf course, there is such a thing as too much optimization. I myself am prone to sharpening the axe so much that I eventually forget to actually do some chopping. In fact, this is part of why I am so excited to teach these courses. Because I spend so much time learning the intricacies of the tools I am using and the mental models required to teach them,"
+  },
+  {
+    "objectID": "01-workflow.html#goals-for-today",
+    "href": "01-workflow.html#goals-for-today",
+    "title": "Advanced workflows and tools",
+    "section": "Goals for today",
+    "text": "Goals for today\n\nlearn to fully utilize this course material\nengage with the R community\nfind resources and help faster\nimprove your workflow"
+  },
+  {
+    "objectID": "01-workflow.html#keep-track-of-your-code-version-management-with-git",
+    "href": "01-workflow.html#keep-track-of-your-code-version-management-with-git",
+    "title": "Advanced workflows and tools",
+    "section": "Keep track of your code: version management with git",
+    "text": "Keep track of your code: version management with git"
+  },
+  {
+    "objectID": "01-workflow.html#share-code-and-help-others-on-github",
+    "href": "01-workflow.html#share-code-and-help-others-on-github",
+    "title": "Advanced workflows and tools",
+    "section": "Share code and help others on github",
+    "text": "Share code and help others on github"
+  },
+  {
+    "objectID": "01-workflow.html#re-use-functions-with-a-personal-package",
+    "href": "01-workflow.html#re-use-functions-with-a-personal-package",
+    "title": "Advanced workflows and tools",
+    "section": "Re-use functions with a personal package",
+    "text": "Re-use functions with a personal package\n\nwrite a personal package that contains a custom ggplot2 theme\npublish your package on GitHub"
+  },
+  {
+    "objectID": "01-workflow.html#install-packages-from-different-sources-cran-github-and-bioconductor",
+    "href": "01-workflow.html#install-packages-from-different-sources-cran-github-and-bioconductor",
+    "title": "Advanced workflows and tools",
+    "section": "Install packages from different sources: cran, github and bioconductor",
+    "text": "Install packages from different sources: cran, github and bioconductor\n\nremotes/devtools\nrenv"
+  },
+  {
+    "objectID": "01-workflow.html#get-help-faster-with-reproducible-examples-reprex",
+    "href": "01-workflow.html#get-help-faster-with-reproducible-examples-reprex",
+    "title": "Advanced workflows and tools",
+    "section": "Get help faster with reproducible examples: reprex",
+    "text": "Get help faster with reproducible examples: reprex"
+  },
+  {
+    "objectID": "01-workflow.html#resources",
+    "href": "01-workflow.html#resources",
+    "title": "Advanced workflows and tools",
+    "section": "Resources",
+    "text": "Resources\n\nhttps://git-scm.com/\nhttps://github.com/hits-mbm-dev/git-intro\nhttps://r-pkgs.org/\nhttps://reprex.tidyverse.org/"
+  },
+  {
+    "objectID": "01-workflow.html#exercises",
+    "href": "01-workflow.html#exercises",
+    "title": "Advanced workflows and tools",
+    "section": "Exercises",
+    "text": "Exercises\n\nMake it your own!\nIn the introductory course last semester we talked about different ways of expressing the spread measurements around their mean. In the process we found that while there is a function in R for the standard deviation (sd), there is no such built-in function for the standard error of the mean. So we wrote our own tiny function called sem, which calculates just that. But if would be annoying if we had to put this function in every one of our analysis scripts!\nWrite a small package, which exports the sem function and publish it on GitHub. Make sure that you are able to install your very own package from there as well. As your exercise submission for this week, simply send me a link to your repository. Remember to ask questions in our discord server if you get stuck!\nBonus Tasks:\n\nWrite documentation for your sem function with roxygen and experience the joy of seeing your very own words on a help page.\nExtend your package with a custom ggplot theme function.\n\n\n\n\n\n“The Magical Number Seven, Plus or Minus Two: Some Limits on Our Capacity for Processing Information. - PsycNET.” n.d. APA PsycNET. https://doi.apa.org/record/1994-28291-001?doi=1. https://doi.org/10.1037/0033-295X.101.2.343."
+  },
+  {
+    "objectID": "02-communication.html",
+    "href": "02-communication.html",
+    "title": "Advanced Communication",
+    "section": "",
+    "text": "what is a website anyway?\noverview of packages: distill, blogdown\nbuild a hugo apéro site: https://hugo-apero.netlify.app/\nquarto!"
+  },
+  {
+    "objectID": "02-communication.html#make-presentations-with-rmarkdown",
+    "href": "02-communication.html#make-presentations-with-rmarkdown",
+    "title": "Advanced Communication",
+    "section": "Make presentations with rmarkdown",
+    "text": "Make presentations with rmarkdown\n\noverview of packages: PowerPoint, xaringan, revealjs\ninclude plots from code\nwork with larger projects, include plots from other Rmd documents"
+  },
+  {
+    "objectID": "02-communication.html#resources",
+    "href": "02-communication.html#resources",
+    "title": "Advanced Communication",
+    "section": "Resources",
+    "text": "Resources\n\nhttps://bookdown.org/yihui/blogdown/\nhttps://gohugo.io/\nhttps://github.com/yihui/xaringan\nhttps://xaringan.gallery/\nhttps://github.com/gadenbuie/xaringanExtra/\nhttps://github.com/rstudio/revealjs"
+  },
+  {
+    "objectID": "02-communication.html#exercises",
+    "href": "02-communication.html#exercises",
+    "title": "Advanced Communication",
+    "section": "Exercises",
+    "text": "Exercises"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "“The Magical Number Seven, Plus or Minus Two: Some\nLimits on Our Capacity for Processing Information. -\nPsycNET.” n.d. APA PsycNET.\nhttps://doi.apa.org/record/1994-28291-001?doi=1. https://doi.org/10.1037/0033-295X.101.2.343."
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Learning R can be quite the journey. This is why I am collecting useful links to more resources on this extra page. Some will help you understand the topics covered, some dive deeper and some will be interesting if you want to discover more cool things you can do with R."
+  },
+  {
+    "objectID": "resources.html#learning-the-tidyverse",
+    "href": "resources.html#learning-the-tidyverse",
+    "title": "Resources",
+    "section": "Learning the tidyverse",
+    "text": "Learning the tidyverse\n\nR for Data Science (wickhamDataScienceImport2017?)\nThe ggplot2 book\nR4DS online Community\nRStudio Cheat Sheets!\nThe Modern Dive (kimStatisticalInferenceData2019?)\nRStudio Education"
+  },
+  {
+    "objectID": "resources.html#learning-rmarkdown",
+    "href": "resources.html#learning-rmarkdown",
+    "title": "Resources",
+    "section": "Learning Rmarkdown",
+    "text": "Learning Rmarkdown\n\nrmarkdown cheatsheet\nrmarkdown reference\npandoc manual (advanced)\nrmarkdown for reproducible analysis\nrmarkdown website"
+  },
+  {
+    "objectID": "resources.html#learning-r-in-general",
+    "href": "resources.html#learning-r-in-general",
+    "title": "Resources",
+    "section": "Learning R in general",
+    "text": "Learning R in general\n\nAdvanced R (wickhamAdvancedSecondEdition2019?)\nHands on Programming with R (grolemundHandsOnProgrammingWrite2014?)\nR Packages (wickhamPackagesOrganizeTest2015?)\nData Visualization: A Practical Introduction (healyDataVisualizationPractical2018?)\nGraph Cookbook (changGraphicsCookbookPractical2013?)"
+  },
+  {
+    "objectID": "resources.html#learning-statistics",
+    "href": "resources.html#learning-statistics",
+    "title": "Resources",
+    "section": "Learning Statistics",
+    "text": "Learning Statistics\n\nIntuitive Biostatistics (motulskyIntuitiveBiostatisticsNonmathematical2017?)\nStatistics Done Wrong (reinhartStatisticsDoneWrong2015?)\nStatQuest!!! with Josh Starner\nModern Statistics for Modern Biology"
+  },
+  {
+    "objectID": "resources.html#helpful-tools",
+    "href": "resources.html#helpful-tools",
+    "title": "Resources",
+    "section": "Helpful tools",
+    "text": "Helpful tools\n\nGenerate ggplots via graphical user interface with esquisee"
+  },
+  {
+    "objectID": "resources.html#talks-podcasts-blogs-videos",
+    "href": "resources.html#talks-podcasts-blogs-videos",
+    "title": "Resources",
+    "section": "Talks, Podcasts, Blogs, Videos",
+    "text": "Talks, Podcasts, Blogs, Videos\nJust some of the people with inspiring blogposts, videos and the likes.\n\nDavid Robinson\n\nYouTube\nwebsite\n\nJulia Silge\n\nYouTube\nwebsite\n\nAlison Hill\n\nwebsite\n\nThomas Lin Pedersen\n\nwebsite"
+  },
+  {
+    "objectID": "resources.html#misc",
+    "href": "resources.html#misc",
+    "title": "Resources",
+    "section": "Misc",
+    "text": "Misc\n\nCute and insightful illustrations (ArtworkAllisonHorst?)\nHappy Git with R"
+  },
+  {
+    "objectID": "resources.html#package-documentation",
+    "href": "resources.html#package-documentation",
+    "title": "Resources",
+    "section": "Package Documentation",
+    "text": "Package Documentation\n\ntidyverse\ntidymodels\nrmarkdown\nreadr\ndplyr\nggplot\ntidyr\nstringr\npurrr\nragg"
+  },
+  {
+    "objectID": "resources.html#books-and-manuals",
+    "href": "resources.html#books-and-manuals",
+    "title": "Resources",
+    "section": "Books and Manuals",
+    "text": "Books and Manuals\n\nTidymodels book\nggplot book\nRmarkdown Cookbook\nRmarkdown Book"
+  },
+  {
+    "objectID": "resources.html#getting-help",
+    "href": "resources.html#getting-help",
+    "title": "Resources",
+    "section": "Getting Help",
+    "text": "Getting Help\n\nHow to find help\nR4DS online learning community"
+  },
+  {
+    "objectID": "resources.html#lists-of-resources",
+    "href": "resources.html#lists-of-resources",
+    "title": "Resources",
+    "section": "Lists of Resources",
+    "text": "Lists of Resources\nThe meta section. This is a list of lists:\n\nbig book of R\nr for the rest of us"
+  },
+  {
+    "objectID": "resources.html#packages-that-enable-this-lecture-format",
+    "href": "resources.html#packages-that-enable-this-lecture-format",
+    "title": "Resources",
+    "section": "Packages that enable this lecture format",
+    "text": "Packages that enable this lecture format\n\nR by (rcoreteamLanguageEnvironmentStatistical2020a?)\nknitr by (knitr?)\nrmarkdown by (rmarkdown?)\nxaringan by (xieXaringanPresentationNinja2020?)"
+  },
+  {
+    "objectID": "02-communication.html#build-a-personal-website-for-free",
+    "href": "02-communication.html#build-a-personal-website-for-free",
+    "title": "Advanced Communication",
+    "section": "Build a personal website (for free)",
+    "text": "Build a personal website (for free)\n\nwhat is a website anyway?\noverview of packages: distill, blogdown\nbuild a hugo apéro site: https://hugo-apero.netlify.app/\nquarto!"
+  },
+  {
+    "objectID": "02-communication.html#make-presentations-with-quarto",
+    "href": "02-communication.html#make-presentations-with-quarto",
+    "title": "Advanced Communication",
+    "section": "Make presentations with quarto",
+    "text": "Make presentations with quarto\n\noverview of packages: PowerPoint, xaringan, revealjs\ninclude plots from code\nwork with larger projects, include plots from other Rmd documents"
+  }
+]

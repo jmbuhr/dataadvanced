@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Jannik Buhr">
-<meta name="dcterms.date" content="2022-07-18">
 
-<title>Advanced Data Analysis with R</title>
+<title>Advanced Data Analysis with R - Machine learning with tidymodels</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -27,7 +25,8 @@ ul.task-list{list-style: none;}
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./01-workflow.html" rel="next">
+<link href="./05-omics.html" rel="next">
+<link href="./03-projects.html" rel="prev">
 <link href="./favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -62,8 +61,7 @@ ul.task-list{list-style: none;}
 
 
 <link rel="stylesheet" href="style.css">
-<meta property="og:title" content="Advanced Data Analysis with R">
-<meta property="og:description" content="and python!">
+<meta property="og:title" content="Advanced Data Analysis with R - Machine learning with tidymodels">
 <meta property="og:site-name" content="Advanced Data Analysis with R">
 </head>
 
@@ -73,7 +71,7 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Advanced Data Analysis with R</h1>
+      <h1 class="quarto-secondary-nav-title">Machine learning with <code>tidymodels</code></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -102,7 +100,7 @@ ul.task-list{list-style: none;}
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Hello and welcome!</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Hello and welcome!</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -122,7 +120,7 @@ ul.task-list{list-style: none;}
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04-machine-learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Machine learning with <code>tidymodels</code></span></a>
+  <a href="./04-machine-learning.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Machine learning with <code>tidymodels</code></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -159,115 +157,33 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Hello and welcome!</a>
-  <ul class="collapse">
-  <li><a href="#prerequisits" id="toc-prerequisits" class="nav-link" data-scroll-target="#prerequisits">Prerequisits</a></li>
-  <li><a href="#structure" id="toc-structure" class="nav-link" data-scroll-target="#structure">Structure of the course</a>
-  <ul class="collapse">
-  <li><a href="#exe" id="toc-exe" class="nav-link" data-scroll-target="#exe">Exercises</a></li>
-  <li><a href="#seminar" id="toc-seminar" class="nav-link" data-scroll-target="#seminar">Seminar</a></li>
-  <li><a href="#discord" id="toc-discord" class="nav-link" data-scroll-target="#discord">Discord and signup</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#what-is-machine-learning" id="toc-what-is-machine-learning" class="nav-link active" data-scroll-target="#what-is-machine-learning">What is machine learning?</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jmbuhr/dataadvanced/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/jmbuhr/dataadvanced/blob/main/index.qmd" class="toc-action">View source</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jmbuhr/dataadvanced/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/jmbuhr/dataadvanced/blob/main/04-machine-learning.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Advanced Data Analysis with R</h1>
-<p class="subtitle lead">and python!</p>
+<h1 class="title d-none d-lg-block">Machine learning with <code>tidymodels</code></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Jannik Buhr </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">July 18, 2022</p>
-    </div>
-  </div>
     
   </div>
   
 
 </header>
 
-<section id="welcome" class="level1 unnumbered">
-<h1 class="unnumbered">Hello and welcome!</h1>
-<p>… to the latest iteration of my advanced R course, where we will learn to analyse data in style.</p>
-<!-- ::: { .alert .alert-primary} -->
-<!-- **Current course dates**\ -->
-<!-- WS22/23\ -->
-<!-- 2022-10-21 -- 2022-12-16\ -->
-<!-- See [structure of the course](#structure)\ -->
-<!-- Lecture online in your own time\ -->
-<!-- Seminar weekly on Fridays at 9:15 – 10:45\ -->
-<!-- Sign-up (Heidelberg University students): see [discord](#discord)\ -->
-<!-- Language: Lectures are in English but the seminar can be in German if you choose so -->
-<!-- (in any case, you can always ask questions in German as well). -->
-<!-- ::: -->
-<!-- ::: {.video-container} -->
-<!-- <iframe class="video" src="https://www.youtube.com/embed/GguzPRquTLI?vq=hd1080" allowfullscreen></iframe> -->
-<!-- ::: -->
-<section id="prerequisits" class="level2">
-<h2 class="anchored" data-anchor-id="prerequisits">Prerequisits</h2>
-<p>Please complete the course <a href="https://jmbuhr.de/dataintro/">Introduction to Data Analysis with R</a> prior to this one.</p>
-</section>
-<section id="structure" class="level2">
-<h2 class="anchored" data-anchor-id="structure">Structure of the course</h2>
-<p>Most participants will be biochemistry bachelor (and master) students, but the material is open to anyone!</p>
-<ul>
-<li>There are 8 lectures in total, each accompanied by:
-<ul>
-<li>A video of the lecture at the top of each page</li>
-<li>The lecture script, which consists of the code written during the lecture (plus some more code to generate illustrative graphics) and explanations</li>
-<li><a href="#exe">Exercises</a> to complete and send in</li>
-<li>A <a href="#seminar">seminar</a> to discuss the exercises</li>
-<li>A <a href="#discord">discord</a> server to ask questions and share solutions</li>
-</ul></li>
-</ul>
-<p>In addition to the 8 regular lectures + follow up seminars, there is an introductory seminar in the first week, before the first lecture.</p>
-<ul>
-<li>October 21: First seminar</li>
-<li>October 28: Seminar for the first lecture</li>
-<li>December 16: Seminar for the last lecture</li>
-</ul>
-<p>The first seminar is dedicated to helping you get your laptops set up for the course, show the course structure and explain core concepts.</p>
-<p>I do recommend to watch the lecture in your own time, and then use the lecture script afterwards to look up concepts and code you want to revisit. Code chunks also have a copy-button, which is helpful for quickly playing around with it, but make sure you actually walk through the lecture and do the typing first, because muscle memory will server you well in the future.</p>
-<section id="exe" class="level3">
-<h3 class="anchored" data-anchor-id="exe">Exercises</h3>
-<p>To complete the course, hand in at least 5 out of 8 exercises. The important part here is not that each exercise is a perfect solution, but if you encounter questions and struggles during your attempt of the exercise, make sure to include those pain points as well so that we can cover those in the <a href="#seminar">Seminar</a>. Please hand in your solutions <strong>before</strong> the seminar via a direct message on <a href="#discord">discord</a>. The earlier in the week you submit your solutions, the more time I have to prepare answers for the seminar.</p>
-</section>
-<section id="seminar" class="level3">
-<h3 class="anchored" data-anchor-id="seminar">Seminar</h3>
-<p>Each week, we will meet to discuss the exercises and answer any questions that might have have popped up. Currently it looks like it will be possible to do so in person, in which case we will meet here:</p>
-<blockquote class="blockquote">
-<p>TO BE ANNOUNCED</p>
-</blockquote>
-<p>Even though these are technically computer rooms, it would be great if you could bring your own laptop so that you can code along and known that you will be able to apply what you learned after the course as well. Also, we might not be able to install the necessary software in the computer room.</p>
-</section>
-<section id="discord" class="level3">
-<h3 class="anchored" data-anchor-id="discord">Discord and signup</h3>
-<!-- If you are a biochemistry student at Heidelberg University, click on this link: <https://discord.gg/y54pnjkDyw> to join our discord server. -->
-<!-- To sign up for the course, send a message to me (Jannik) with your **full name** and **matriculation number** so that we can put the course onto your official transcript of records. -->
-<!-- If the link doesn't work, please send me a message via my [contact form](https://jmbuhr.de/contact). -->
-<!-- On the server, you will be able to ask questions that can be answered by me and your fellow learners, hand in the exercises and receive feedback. -->
+<section id="what-is-machine-learning" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-machine-learning">What is machine learning?</h2>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -473,10 +389,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./03-projects.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Manage large projects with <code>targets</code></span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01-workflow.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Advanced workflows and tools</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./05-omics.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Omics: go big!</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
